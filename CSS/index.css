@@ -155,9 +155,29 @@ body {
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
   background-color: #ffffff;
+  font-size: 62.5%;
 }
-h1,
+h1 {
+  font-family: 'Elsie', cursive;
+  color: #353538;
+  font-size: 7rem;
+}
 h2 {
   font-family: 'Elsie', cursive;
+  color: #353538;
+  font-size: 3.6rem;
+}
+h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #353538;
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #353538;
+}
+p {
+  font-size: 1.7rem;
 }
 /*Importing Cutom Styling */
