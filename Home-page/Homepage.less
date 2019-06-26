@@ -6,7 +6,7 @@
 
 .section1 {
     width: 95%;
-    // height: 550px;
+    height: auto;
     margin: 50px auto;
     padding-bottom: 100px;
     display: flex;
@@ -18,18 +18,40 @@
         width: 45%;
         height: auto;
         border-radius: 20px;
+
+        @media @mobile {
+            width: 100%;
+            margin-bottom: 30px;
+        };
     };
 
     div {
-        width: 40%;
-        height: 200px;
+        width: 45%;
+        height: 250px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        // background-color: @accentColor;
+        // border-radius: 20px;
+
 
         p {
             line-height: 1.5;
-        }
-    }
+
+        };
+
+        @media @tablet {
+            justify-content: space-around;
+        };
+
+        @media @mobile {
+            width: 100%;
+        };
+    };
+
+    @media @mobile {
+        flex-direction: column;
+        padding-bottom: 50px;
+    };
 }

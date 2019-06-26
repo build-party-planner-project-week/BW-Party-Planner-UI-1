@@ -172,6 +172,16 @@ h2 {
   color: #353538;
   font-size: 3.6rem;
 }
+@media (max-width: 800px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 3.6rem;
+  }
+}
 h3 {
   font-family: 'Josefin Sans', sans-serif;
   color: #353538;
@@ -188,6 +198,16 @@ a:hover {
 }
 p {
   font-size: 1.7rem;
+}
+@media (max-width: 800px) {
+  p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1.7rem;
+  }
 }
 /*Importing Cutom Styling */
 .navBar {
@@ -338,6 +358,7 @@ header .callToAction:hover {
 }
 .section1 {
   width: 95%;
+  height: auto;
   margin: 50px auto;
   padding-bottom: 100px;
   display: flex;
@@ -350,9 +371,15 @@ header .callToAction:hover {
   height: auto;
   border-radius: 20px;
 }
+@media (max-width: 500px) {
+  .section1 img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
 .section1 div {
-  width: 40%;
-  height: 200px;
+  width: 45%;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -360,4 +387,20 @@ header .callToAction:hover {
 }
 .section1 div p {
   line-height: 1.5;
+}
+@media (max-width: 800px) {
+  .section1 div {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 500px) {
+  .section1 div {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .section1 {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
 }
