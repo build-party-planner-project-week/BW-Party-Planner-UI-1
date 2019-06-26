@@ -69,19 +69,6 @@ p {
     }
 }
 
-footer {
-    width: 100%;
-    background: black;
-}
-
-footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
-}
 
 footer nav a {
     color: white;
@@ -97,8 +84,7 @@ footer nav a {
 
 @media(max-width: 500px){
     .navigation{
-        width: 500px;
-        text-align: center;
+        width: 480px;
     }
 }
 
@@ -111,12 +97,26 @@ nav a{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+@media(max-width: 500px){
+    .nav a{
+        
+    }
+}
+
+
+
 .aboutUs{
     display: flex;
     justify-content: center;
     margin: 30px 0px 30px 10px;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+@media(max-width: 500px){
+    .aboutUs{
+        width: 450;
+    }
 }
 
 .left{
@@ -148,6 +148,7 @@ nav a{
     .left{
         flex-direction: column; 
         margin: 7% 0 7% 0;
+        width: 480px;
     }
 }
 
@@ -161,6 +162,7 @@ nav a{
 @media(max-width: 500px){
     .right{
         flex-direction: column-reverse; 
+        width: 480px;
     }
 }
 
@@ -170,4 +172,18 @@ nav a{
 
 .left h3{
     font-family: 'Elsie', cursive;
+}
+
+.contactInfo{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.contactInfo h3{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.linkedIn{
+    
 }
