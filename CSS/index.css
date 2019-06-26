@@ -269,22 +269,37 @@ header img {
   opacity: 0.7;
 }
 header .headerText {
-  width: 50%;
+  width: 75%;
   height: 200px;
   border-radius: 20px;
   position: absolute;
   top: 30%;
-  left: 25%;
+  left: 13%;
   text-align: center;
 }
 header .headerText .headline {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
   color: black;
 }
+@media (max-width: 800px) {
+  header .headerText .headline {
+    font-size: 3rem;
+  }
+}
 header .headerText .sub-headline {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: black;
+}
+@media (max-width: 800px) {
+  header .headerText .sub-headline {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  header .headerText {
+    top: 20%;
+  }
 }
 header .callToAction {
   position: absolute;
@@ -301,6 +316,19 @@ header .callToAction {
   padding: 10px 0;
   font-size: 2rem;
   font-weight: bold;
+}
+@media (max-width: 800px) {
+  header .callToAction {
+    top: 70%;
+    left: 30%;
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  header .callToAction {
+    width: 90%;
+    left: 5%;
+  }
 }
 header .callToAction:hover {
   background-color: #8d99ae;
