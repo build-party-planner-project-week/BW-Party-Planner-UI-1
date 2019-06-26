@@ -1,4 +1,7 @@
 
+@import 'menu';
+
+
 body {
     line-height: 1;
     margin-top: 20px;
@@ -288,5 +291,3 @@ nav {
     }
 }; 
 
-
-@import menu.less;
