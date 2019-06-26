@@ -1,0 +1,52 @@
+
+header {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+    
+
+    img {
+        width: 100%;
+        height: auto;
+        opacity: 0.7;
+    };
+
+    .headerText {
+        width: 50%;
+        height: 200px;
+        // background-color: @accentColor;
+        border-radius: 20px;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        text-align: center;
+
+        .headline {
+            font-size: 4rem;
+            font-weight: bold;
+            color: black;
+
+        };
+
+        .sub-headline {
+            font-size: 3.5rem;
+            color: black;
+        }
+    };
+
+    .callToAction {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        text-align: center;
+        .ButtonCTA(@cTAColor, @white);
+    };
+
+    .callToAction:hover {
+        background-color: @featurebg;
+        border-color: @featurebg;
+        transition: 0.3s;
+    }
+};
+
+

@@ -8,6 +8,11 @@
     background-color: rgba(255, 255, 255, 0.6);
     position: fixed;
     top: 0;
+    z-index: 1000;
+
+    @media @tablet {
+        justify-content: space-between;
+    };
     
 };
 
@@ -17,6 +22,17 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
+
+    @media @tablet {
+        width: 100%;
+    };
+
+    .hideNav {
+        @media @tablet {
+            display: none;
+        };
+    };
 };
 
 .hamburger {
@@ -51,6 +67,10 @@ nav {
     };
 };
 
-// .hamburger-hidden {
-//     display: none;
-// };
+.hamburger-hidden {
+    display: none;
+    
+    @media @tablet {
+        display: flex;
+    }
+};

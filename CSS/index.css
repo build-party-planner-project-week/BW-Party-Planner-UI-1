@@ -162,6 +162,11 @@ h1 {
   color: #353538;
   font-size: 7rem;
 }
+@media (max-width: 800px) {
+  h1 {
+    font-size: 5.5rem;
+  }
+}
 h2 {
   font-family: 'Elsie', cursive;
   color: #353538;
@@ -197,6 +202,12 @@ p {
   background-color: rgba(255, 255, 255, 0.6);
   position: fixed;
   top: 0;
+  z-index: 1000;
+}
+@media (max-width: 800px) {
+  .navBar {
+    justify-content: space-between;
+  }
 }
 nav {
   width: 75%;
@@ -204,6 +215,16 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 800px) {
+  nav {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  nav .hideNav {
+    display: none;
+  }
 }
 .hamburger {
   width: 35px;
@@ -228,4 +249,61 @@ nav {
 }
 .change .bar3 {
   transform: rotate(45deg) translate(-8px, -8px);
+}
+.hamburger-hidden {
+  display: none;
+}
+@media (max-width: 800px) {
+  .hamburger-hidden {
+    display: flex;
+  }
+}
+header {
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+}
+header img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+}
+header .headerText {
+  width: 50%;
+  height: 200px;
+  border-radius: 20px;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  text-align: center;
+}
+header .headerText .headline {
+  font-size: 4rem;
+  font-weight: bold;
+  color: black;
+}
+header .headerText .sub-headline {
+  font-size: 3.5rem;
+  color: black;
+}
+header .callToAction {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  border: 1px solid #e5106c;
+  background-color: #e5106c;
+  border-radius: 10px;
+  color: #ffffff;
+  width: 20%;
+  height: 45px;
+  text-align: center;
+  vertical-align: center;
+  padding: 10px 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+header .callToAction:hover {
+  background-color: #8d99ae;
+  border-color: #8d99ae;
+  transition: 0.3s;
 }
