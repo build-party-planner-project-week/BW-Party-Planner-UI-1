@@ -1,0 +1,74 @@
+
+header {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+    
+
+    img {
+        width: 100%;
+        height: auto;
+        opacity: 0.7;
+    };
+
+    .headerText {
+        width: 75%;
+        height: 200px;
+        // background-color: @accentColor;
+        border-radius: 20px;
+        position: absolute;
+        top: 30%;
+        left: 13%;
+        text-align: center;
+
+        .headline {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: black;
+
+            @media @tablet {
+               font-size: 3.0rem;
+            };
+
+        };
+
+        .sub-headline {
+            font-size: 3.0rem;
+            color: black;
+            @media @tablet {
+                font-size: 2.5rem;
+             };
+        }
+
+        @media @mobile {
+            top: 20%;
+        };
+    };
+
+    .callToAction {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        text-align: center;
+        .ButtonCTA(@cTAColor, @white);
+
+        @media @tablet {
+            top: 70%;
+            left: 30%;
+            width: 40%;
+        };
+
+        @media @mobile {
+            width: 90%;
+            left: 5%;
+        }
+    };
+
+    .callToAction:hover {
+        background-color: @featurebg;
+        border-color: @featurebg;
+        transition: 0.3s;
+    }
+};
+
+
