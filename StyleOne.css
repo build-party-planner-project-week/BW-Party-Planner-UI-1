@@ -1,46 +1,13 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+
 body {
     line-height: 1;
     margin-top: 20px;
     color: #353538;
 }
 
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 html, body {
     height: 100%;
@@ -58,52 +25,61 @@ p {
 }
 
 .container {
-    width: 1000px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
 }
 
 @media(max-width:500px){
     .container{
-        width: 500px;
-        margin: 0 auto;
+        width: 100%;
+        margin: 0;
     }
 }
 
-
-footer nav a {
-    color: white;
-    text-decoration: none;
-}
 
 
 .navigation{
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
+
 }
 
-@media(max-width: 500px){
+@media(max-width: 800px){
     .navigation{
-        width: 480px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media(max-width: 800px){
+    nav{
+        width: 50%;
+        justify-content: 
     }
 }
 
 
-
 nav a{
-    padding-left: 70px;
+    /* padding-left: 70px; */
     text-decoration: none;
     color: #e5106c;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-@media(max-width: 500px){
-    .nav a{
-        
+@media(max-width: 800px){
+    nav a{
+        padding: 0;
+        width: 100%;
+        justify-content: space-evenly
     }
 }
-
-
 
 .aboutUs{
     display: flex;
@@ -113,9 +89,16 @@ nav a{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 5%;
+}
+
 @media(max-width: 500px){
     .aboutUs{
-        width: 450;
+        width: 450px;
     }
 }
 
@@ -126,6 +109,18 @@ nav a{
     padding: 2%;
     opacity: 0.75;
     border-radius: 2rem;
+    width: 90%;
+    /* margin-left: 4%; */
+    
+}
+
+@media(max-width: 500px){
+    .left{
+        flex-direction: column; 
+        margin: 7% 3rem 7% 3rem;
+        width: 80%;
+
+    }
 }
 
 .right{
@@ -137,20 +132,25 @@ nav a{
     padding: 2%;
     opacity: 0.75;
     border-radius: 2rem;
+    width: 90%;
+    /* margin-left: 4%; */
+
 }
+@media(max-width: 500px){
+    .right{
+        flex-direction: column-reverse; 
+        width: 80%;
+        margin: 0 3rem 0 3rem;
+    }
+}
+
 
 .left p{
     text-align: center;
     padding: 10% 0 10% 10%;
     font-family: 'Josefin Sans', sans-serif;
 }
-@media(max-width: 500px){
-    .left{
-        flex-direction: column; 
-        margin: 7% 0 7% 0;
-        width: 480px;
-    }
-}
+
 
 
 .right p{
@@ -159,12 +159,7 @@ nav a{
     font-family: 'Josefin Sans', sans-serif;
 }
 
-@media(max-width: 500px){
-    .right{
-        flex-direction: column-reverse; 
-        width: 480px;
-    }
-}
+
 
 .right h3{
     font-family: 'Elsie', cursive;
@@ -184,6 +179,14 @@ nav a{
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.linkedIn{
-    
+
+.gitHub{
+    text-decoration: none;
+    margin-left: 2rem;
+    color: #e5106c;
+}
+
+.linkedInLeft{
+    text-decoration: none;
+    color: #e5106c;
 }
