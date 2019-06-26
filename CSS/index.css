@@ -189,9 +189,6 @@ a:hover {
 p {
   font-size: 1.7rem;
 }
-.wrapper {
-  margin-top: 100px;
-}
 /*Importing Cutom Styling */
 .navBar {
   margin: 0 auto;
@@ -334,4 +331,33 @@ header .callToAction:hover {
   background-color: #8d99ae;
   border-color: #8d99ae;
   transition: 0.3s;
+}
+.wrapper {
+  margin: 100px auto 0;
+  width: 95%;
+}
+.section1 {
+  width: 95%;
+  margin: 50px auto;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #8d99ae;
+}
+.section1 img {
+  width: 45%;
+  height: auto;
+  border-radius: 20px;
+}
+.section1 div {
+  width: 40%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.section1 div p {
+  line-height: 1.5;
 }
