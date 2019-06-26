@@ -117,7 +117,7 @@ nav a{
 @media(max-width: 500px){
     .left{
         flex-direction: column; 
-        margin: 7% 3rem 7% 3rem;
+        margin: 7% 0 7% 7%;
         width: 80%;
 
     }
@@ -140,7 +140,7 @@ nav a{
     .right{
         flex-direction: column-reverse; 
         width: 80%;
-        margin: 0 3rem 0 3rem;
+        margin: 7% 0 7% 7%;
     }
 }
 
@@ -151,12 +151,28 @@ nav a{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+@media(max-width: 500px){
+    .left p{
+        text-align: center;
+        padding: 10% 10%10% 10%;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+}
+
 
 
 .right p{
     text-align: center;
     padding: 10% 10% 10% 0;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+@media(max-width: 500px){
+    .right p{
+        text-align: center;
+        padding: 10% 10%10% 10%;
+        font-family: 'Josefin Sans', sans-serif;
+    }
 }
 
 
