@@ -43,6 +43,7 @@
 
         @media @tablet {
             justify-content: space-around;
+            height: 300px;
         };
 
         @media @mobile {
@@ -54,4 +55,31 @@
         flex-direction: column;
         padding-bottom: 50px;
     };
-}
+};
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 400px;
+    margin: 50px auto;
+    justify-content: space-around;
+    border-bottom: 1px solid @featurebg;
+
+    .columns {
+        width: 95%;
+        height: auto;
+        padding-bottom: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        div {
+            width: 30%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        };
+    };
+};
