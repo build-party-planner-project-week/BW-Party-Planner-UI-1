@@ -199,7 +199,7 @@ p {
 .contactInfo{
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-
+    margin-bottom: 10px;
 }
 
 .contactInfo h3{
@@ -219,4 +219,10 @@ p {
 }
 
 
+.contact{
+    margin-top: 10px;
+}
 
+footer{
+    text-align: center;
+}
