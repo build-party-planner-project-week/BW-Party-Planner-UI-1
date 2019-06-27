@@ -276,9 +276,8 @@ p {
     display: flex;
   }
 }
-.hideDropDown {
-  visibility: hidden;
-  padding: 30% 0;
+.dropDown {
+  padding: 20% 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -289,18 +288,21 @@ p {
   position: fixed;
   z-index: 999;
 }
-.hideDropDown a {
+.dropDown a {
   font-size: 4rem;
   color: #8d99ae;
 }
-.hideDropDown a:hover {
+.dropDown a:hover {
   color: #f9cfe1;
 }
-.hideDropDown .cTADropDown {
+.dropDown .cTADropDown {
   color: #e5106c;
 }
-.hideDropDown .cTADropDown:hover {
+.dropDown .cTADropDown:hover {
   color: #f9cfe1;
+}
+.hideDropDown {
+  visibility: hidden;
 }
 header {
   width: 100%;
