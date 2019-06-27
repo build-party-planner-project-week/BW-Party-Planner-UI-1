@@ -72,9 +72,13 @@
         text-align: center;
         margin-bottom: 50px;
 
+        @media @tablet {
+            width: 75%;
+        };
+
         @media @mobile {
             width: 100%;
-        }
+        };
     };
 
     h2 {
@@ -112,6 +116,10 @@
 
             .blue {
                 background-color: @featurebg;
+            };
+
+            @media @tablet {
+                width: 45%;
             };
 
             @media @mobile {

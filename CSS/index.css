@@ -448,6 +448,11 @@ header .callToAction:hover {
   text-align: center;
   margin-bottom: 50px;
 }
+@media (max-width: 800px) {
+  .section2 .features {
+    width: 75%;
+  }
+}
 @media (max-width: 500px) {
   .section2 .features {
     width: 100%;
@@ -485,6 +490,11 @@ header .callToAction:hover {
 }
 .section2 .columns div .blue {
   background-color: #8d99ae;
+}
+@media (max-width: 800px) {
+  .section2 .columns div {
+    width: 45%;
+  }
 }
 @media (max-width: 500px) {
   .section2 .columns div {
