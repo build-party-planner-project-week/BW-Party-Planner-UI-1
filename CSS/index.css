@@ -167,6 +167,11 @@ h1 {
     font-size: 5.5rem;
   }
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
 h2 {
   font-family: 'Elsie', cursive;
   color: #353538;
@@ -276,9 +281,8 @@ p {
     display: flex;
   }
 }
-.hideDropDown {
-  visibility: hidden;
-  padding: 30% 0;
+.dropDown {
+  padding: 20% 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -289,18 +293,21 @@ p {
   position: fixed;
   z-index: 999;
 }
-.hideDropDown a {
+.dropDown a {
   font-size: 4rem;
   color: #8d99ae;
 }
-.hideDropDown a:hover {
+.dropDown a:hover {
   color: #f9cfe1;
 }
-.hideDropDown .cTADropDown {
+.dropDown .cTADropDown {
   color: #e5106c;
 }
-.hideDropDown .cTADropDown:hover {
+.dropDown .cTADropDown:hover {
   color: #f9cfe1;
+}
+.hideDropDown {
+  visibility: hidden;
 }
 header {
   width: 100%;
@@ -331,6 +338,11 @@ header .headerText .headline {
     font-size: 3rem;
   }
 }
+@media (max-width: 500px) {
+  header .headerText .headline {
+    font-size: 2.5rem;
+  }
+}
 header .headerText .sub-headline {
   font-size: 3rem;
   color: black;
@@ -338,6 +350,11 @@ header .headerText .sub-headline {
 @media (max-width: 800px) {
   header .headerText .sub-headline {
     font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  header .headerText .sub-headline {
+    font-size: 2rem;
   }
 }
 @media (max-width: 500px) {
@@ -380,7 +397,7 @@ header .callToAction:hover {
   transition: 0.3s;
 }
 .wrapper {
-  margin: 100px auto 0;
+  margin: 100px auto 50px;
   width: 95%;
 }
 .section1 {
@@ -446,6 +463,11 @@ header .callToAction:hover {
   text-align: center;
   margin-bottom: 50px;
 }
+@media (max-width: 800px) {
+  .section2 .features {
+    width: 75%;
+  }
+}
 @media (max-width: 500px) {
   .section2 .features {
     width: 100%;
@@ -484,8 +506,27 @@ header .callToAction:hover {
 .section2 .columns div .blue {
   background-color: #8d99ae;
 }
+@media (max-width: 800px) {
+  .section2 .columns div {
+    width: 45%;
+  }
+}
 @media (max-width: 500px) {
   .section2 .columns div {
     width: 80%;
+  }
+  .section2 .columns div p {
+    display: none;
+  }
+  .section2 .columns div h3:hover {
+    background-color: #f9cfe1;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .section2 .columns div .activeTitle {
+    text-decoration-color: #8d99ae;
+  }
+  .section2 .columns div .activeItem {
+    display: flex;
   }
 }
