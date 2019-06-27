@@ -3,23 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/index.css" />
 
     <script defer="defer" src="./Menu/Menu.js"></script>
 
-    <title>Party Planner Blog</title>
+    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/linh-pham" title="Linh Pham">Linh Pham</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
+    <title>Party Planner</title>
 </head>
 
 <body>
+
     <div class="navBar">
         <nav>
             <a href="index.html" class="hideNav">Home</a>
             <div class="logo">
                 <a href="index.html"><h1>Party Planner</h1></a>
             </div>
-            <a href="#" class="hideNav">About</a>
+            <a href="about.html" class="hideNav">About</a>
+
             <div class="hamburger hamburger-hidden">
                 <div class="bar1">.</div>
                 <div class="bar2">.</div>
@@ -28,16 +34,22 @@
         </nav>
     </div>
 
-        <header class="hero">
-            <div class=headerImg>
-                <img src="img/hero.jpg" atl="Large image of a table with party supplies scattered on it">
-            </div>
-            <div class="headerText">
-                <p class="headline">THE BEST WAY TO PLAN A PARTY</p>
-                <p class="sub-headline">Everything you need for an event no one will forget.</p>
-            </div>
-            <button class="callToAction">Login</button>
-        </header>
+    <div class="dropDown hideDropDown">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="https://thepartyplanner.netlify.com/" class="cTADropDown">Login</a>
+    </div>
+
+    <header class="hero">
+        <div class=headerImg>
+            <img src="img/hero.jpg" atl="Large image of a table with party supplies scattered on it">
+        </div>
+        <div class="headerText">
+            <p class="headline">THE BEST WAY TO PLAN A PARTY</p>
+            <p class="sub-headline">Everything you need for an event no one will forget.</p>
+        </div>
+        <a href="https://thepartyplanner.netlify.com/" class="callToAction">Sign Up</a>
+    </header>
     
     <div class="wrapper">
 
@@ -54,26 +66,52 @@
 
         <section class="section2">
             <h2>Features</h2>
+            <p class="features">The Party Planner has features never before seen in an app.  With the following features you can
+            Plan your entire event at your fingertips, keep track of your budget, and even write shopping and to do
+            list. The best part, it's intergrated with facebook so you can grab your friend's list and make sure
+            you don't miss anyone.</p>
             <div class="columns">
                 <div>
-                    <img src="#" atl="some icon">
-                    <h2>Feature 1</h2>
-                    <p> This is where a description of features will go. Again, just writing off the top of my head for now.
-                    Until i can get some better content.</p>
+                    <img class="pink" src="./img/wedding-invitation.png" atl="some icon">
+                    <h3>Guest Tracking</h3>
+                    <p>Now you can make guest lists, send out your invitations, and then you can track when someone rsvps
+                    to your event.</p>
                 </div>
 
                 <div>
-                    <img src="#" atl="some icon">
-                    <h2>Feature 2</h2>
-                    <p> This is where a description of features will go. Again, just writing off the top of my head for now.
-                    Until i can get some better content.</p>
+                    <img class="blue" src="./img/budget.png" atl="some icon">
+                    <h3>Budget Planning</h3>
+                    <p> This app makes it easy to plan your budget and stick to it. Simply add in how much you paid for
+                    supplies and it will keep your budget updated.
+                    </p>
                 </div>
 
                 <div>
-                    <img src="#" atl="some icon">
-                    <h2>Feature 3</h2>
-                    <p> This is where a description of features will go. Again, just writing off the top of my head for now.
-                    Until i can get some better content.</p>
+                    <img class="pink" src="./img/picture.png" atl="some icon">
+                    <h3>Theme & Mood Boards</h3>
+                    <p> Planning a wedding or birthday with a theme or specific colors?  Just upload pictures to your mood
+                    board for inspiration.
+                    </p>
+                </div>
+                <div>
+                    <img class="blue" src="./img/shopping-cart.png" atl="some icon">
+                    <h3>Shopping Lists</h3>
+                    <p> Keep a list of everything you need when you go shopping.  Then once you buy it check is off and add
+                    the price. The app will keep track of the rest. </p>
+                </div>
+
+                <div>
+                    <img class="pink" src="./img/list.png" atl="some icon">
+                    <h3>General To Do Lists</h3>
+                    <p> Write a list of the things you need to do to make your party perfect.  Then check it off to 
+                    keep it updated.</p>
+                </div>
+
+                <div>
+                    <img class="blue" src="./img/facebook-logo-in-circular-button-outlined-social-symbol.png" atl="some icon">
+                    <h3>Connect With Facebook</h3>
+                    <p> Can't remember everyone you want to invite? No problem, just upload your friend's list from
+                    facebook and add who you want.</p>
                 </div>
             </div>
         
@@ -81,13 +119,45 @@
 
         <section class="section3">
             <!-- boostrap carousel -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img class="d-block w-100" src="./img/wedding-invite.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/balloons.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/wedding.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </section>
+    </div> <!--Wrapper-->
 
         <footer>
             <!-- Footer -->
         </footer>
 
-    </div> <!--Wrapper-->
+
+    
+    <!--BootStrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
