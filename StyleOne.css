@@ -3,6 +3,7 @@ body {
     line-height: 1;
     margin-top: 20px;
     color: #353538;
+    margin: auto;
 }
 
 /* * {
@@ -225,4 +226,14 @@ p {
 
 footer{
     text-align: center;
+}
+
+.profileImg{
+    width: 100%;
+}
+
+@media(max-width: 500px){
+    .profileImg{
+        width: 100%;
+    }
 }
