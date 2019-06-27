@@ -3,7 +3,7 @@ window.addEventListener('load', function(){
 });
 
 
-//used forEach
+//used .map
 
 let navLink = Array.from(document.querySelectorAll('.linkedInLeft')).map(node => {
     node.addEventListener("mouseover", function( event ) { 
@@ -17,7 +17,7 @@ let navLink = Array.from(document.querySelectorAll('.linkedInLeft')).map(node =>
 
 
 
-//used .map
+//used .forEach
 let gitLink = document.querySelectorAll('.gitHub').forEach(node => {
   node.addEventListener("mouseover", function( event ) { 
       console.log('hello')  
